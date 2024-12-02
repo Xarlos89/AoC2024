@@ -3,7 +3,7 @@ def make_columns(file_path):
 
     with open(file_path, 'r') as file:
         for line in file:
-            parts = line.strip().split("   ")
+            parts = line.strip().split()
             column_1.append(int(parts[0]))
             column_2.append(int(parts[1]))
 
